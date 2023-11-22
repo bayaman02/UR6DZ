@@ -1,87 +1,88 @@
-о<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#57CC02"
+
     tools:context=".MainActivity">
 
     <TextView
-android:id="@+id/text"
-        android:textSize="40sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/text"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="duolingo"/>
+        android:text="duolingo"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="7dp"
         android:layout_marginEnd="10dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
         android:text="Забыли пароль?"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
 
     <TextView
 
-        android:layout_marginTop="7dp"
-        android:layout_marginStart="10dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/button"
-        android:text="Уже есть аккаунт"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
-    
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="7dp"
+        android:text="Уже есть аккаунт"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button" />
+
     <Button
         android:id="@+id/button"
-        android:textSize="25sp"
-        android:text="Зарегистрироваться"
-        android:layout_margin="100dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/imageView"
-android:backgroundTint="@color/white"
-        android:textColor="@color/black"
         android:layout_width="350dp"
-        android:layout_height="60dp"/>
+        android:layout_height="60dp"
+        android:layout_margin="100dp"
+        android:backgroundTint="@color/white"
+        android:text="Зарегистрироваться"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toTopOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView"
-android:layout_marginBottom="2dp"
-        app:layout_constraintEnd_toEndOf="parent"
-app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/text"
         android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginBottom="2dp"
         android:src="@drawable/img_5"
-        android:layout_height="150dp"/>
+        app:layout_constraintBottom_toTopOf="@id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imegeViow1"
-        android:layout_margin="10dp"
-        app:layout_constraintTop_toTopOf="parent"
-android:src="@drawable/img"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         android:layout_width="300dp"
-        android:layout_height="220dp"/>
-    
-    <EditText
+        android:layout_height="220dp"
+        android:layout_margin="10dp"
+        android:src="@drawable/img"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-app:layout_constraintBottom_toTopOf="@id/button"
-      android:hint="Введите ваш пароль:"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:layout_marginTop="30sp"
-        app:layout_constraintTop_toBottomOf="@id/imegeViow1"
-android:hint="Введите ваш пароль:"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:hint="Введите ваш пароль:"
+        app:layout_constraintBottom_toTopOf="@id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:hint="Введите ваш пароль:"
+        app:layout_constraintTop_toBottomOf="@id/imegeViow1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
