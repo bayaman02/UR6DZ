@@ -1,8 +1,10 @@
-package com.classwork.ur6dz;
+package com.classwork.ur5dz;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.classwork.ur5dz.R;
 
 public class MainActivity extends AppCompatActivity {
 
