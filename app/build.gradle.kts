@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.classwork.ur5dz"
+    namespace = "com.classwork.ur6dz"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.classwork.ur5dz"
+        applicationId = "com.classwork.ur6dz"
         minSdk = 26
         targetSdk = 34
         versionCode = 1

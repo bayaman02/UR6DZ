@@ -1,4 +1,4 @@
-package com.classwork.ur5dz;
+package com.classwork.ur6dz;
 
 import org.junit.Test;
 
